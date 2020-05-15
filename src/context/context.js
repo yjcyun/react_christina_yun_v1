@@ -10,7 +10,7 @@ class WebProvider extends Component {
   };
 
   // control sidebar (nav)
-  handlSidebar = () => {
+  handleSidebar = () => {
     this.setState({ sidebarOpen: !this.state.sidebarOpen })
   }
 
@@ -18,7 +18,7 @@ class WebProvider extends Component {
     return (
       <WebContext.Provider value={{
         ...this.state,
-        handleSidbar: this.handleSidbar
+        handleSidebar: this.handleSidebar
       }}>
         {this.props.children}
       </WebContext.Provider>

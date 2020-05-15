@@ -5,42 +5,45 @@ import { WebConsumer } from '../context/context';
 import styled from 'styled-components';
 
 const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false);
 
-  const handleToggle = () => {
-    setIsOpen(!isOpen);
-  };
+  // const [isOpen, setIsOpen] = useState(false);
+
+  // const handleToggle = () => {
+  //   setIsOpen(!isOpen);
+  // };
 
   return (
-    <NavbarWrapper className="navbar">
-      <div className="nav-center">
-        <div className="nav-header">
-          <Link to='/' className="logo">
-            <p>Christina Yun</p>
-          </Link>
-          <button className="nav-btn" onClick={handleToggle}>
-            <MdMenu className="nav-icon" />
-          </button>
-        </div>
+    <WebConsumer>
+      {value => {
+        const { links, sidebarOpen, handleSidebar } = value;
+        return (
+          <NavbarWrapper className="navbar">
+            <div className="nav-center">
+              <div className="nav-header">
+                <Link to='/' className="logo">
+                  <p>Christina Yun</p>
+                </Link>
+                <button className="nav-btn" onClick={handleSidebar}>
+                  <MdMenu className="nav-icon" />
+                </button>
+              </div>
 
-        <ul className={isOpen ? 'nav-links show-nav' : 'nav-links'}>
-          <li>
-            <Link to='/'>home</Link>
-          </li>
-          <li>
-            <Link to='/projects'>projects</Link>
-          </li>
-          <li>
-            <Link to='/about'>about</Link>
-          </li>
-          <li>
-            <Link to='/contact'>contact</Link>
-          </li>
-        </ul>
-
-
-      </div>
-    </NavbarWrapper>
+              <ul className={sidebarOpen ? 'nav-links show-nav' : 'nav-links'}>
+                {links.map(item =>
+                  <li key={item.id}>
+                    <Link
+                      to={item.path}
+                      onClick={handleSidebar}>
+                      {item.text}
+                    </Link>
+                  </li>
+                )}
+              </ul>
+            </div>
+          </NavbarWrapper>
+        );
+      }}
+    </WebConsumer>
   )
 }
 
