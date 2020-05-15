@@ -1,11 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import App from './App';
+import {WebProvider} from './context/context';
+import './index.css';
 
 
 ReactDOM.render(
-    <App />,
+  <WebProvider>
+    <App />
+  </WebProvider>,
   document.getElementById('root')
 );
 

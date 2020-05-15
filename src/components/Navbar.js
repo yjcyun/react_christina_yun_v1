@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { MdMenu } from 'react-icons/md';
+import { WebConsumer } from '../context/context';
 import styled from 'styled-components';
 
 const Navbar = () => {
