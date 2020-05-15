@@ -9,18 +9,18 @@ class WebProvider extends Component {
     links: linkData,
     sidebarOpen: false,
     projects: [],
-    recentProjects: [],
-    loading: true
+    recentProjects: []
   };
 
   componentDidMount() {
     this.setProjects(projectData);
   };
 
+
   // control sidebar (nav)
   handleSidebar = () => {
     this.setState({ sidebarOpen: !this.state.sidebarOpen })
-  }
+  };
 
   // set projects: recent
   setProjects = (projects) => {
@@ -28,10 +28,11 @@ class WebProvider extends Component {
 
     this.setState({
       projects,
-      recentProjects,
-      loading: false
+      recentProjects
     });
-  }
+  };
+
+ 
 
   render() {
     return (

@@ -34,7 +34,7 @@ a {
 }
 
 .btn {
-  border: 1px solid #222;
+  border: 1px solid #333;
   padding: 1rem 4rem;
   margin: 0 auto;
   text-align: center;
@@ -46,6 +46,6 @@ a {
   font-size: 1rem;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
-  background: #222;
+  background: #333;
   color: white;
 }

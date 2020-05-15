@@ -31,7 +31,7 @@ const RecentWrapper = styled.section`
 margin: 5rem auto;
 
 .btn:hover{
-  border: 2px solid black;
+  background: black;
 }
 `;
 

@@ -41,7 +41,7 @@ const ProjectCard = ({ title, skills, img, subtitle, live, github }) => {
 }
 
 const ProjectCardWrapper = styled.div`
-margin: 2rem auto;
+margin: 3rem auto;
 width: 90%;
 padding: 2rem;
 border: 1px solid #ffe1e1;
@@ -49,6 +49,8 @@ background: var(--lightestColor);
 border-radius: 10px;
 text-align: center;
 position: relative;
+transition: var(--mainTransition);
+
 
 .card-skill.large {
   display: none
@@ -83,9 +85,13 @@ position: relative;
   border-radius: 0;
 }
 
-  @media (min-width: 768px) {
+  @media (min-width: 996px) {
     padding: 0;
     width: 80%;
+    &:hover {
+      transform: scale(1.03);
+      background: #fff;
+    }
     .img-container{
       flex: 2;
     }
