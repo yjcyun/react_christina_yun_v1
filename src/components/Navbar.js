@@ -1,17 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
-import { MdMenu } from 'react-icons/md';
+import { MdMenu, MdClose } from 'react-icons/md';
 import { WebConsumer } from '../context/context';
 import styled from 'styled-components';
 
 const Navbar = () => {
-
-  // const [isOpen, setIsOpen] = useState(false);
-
-  // const handleToggle = () => {
-  //   setIsOpen(!isOpen);
-  // };
-
   return (
     <WebConsumer>
       {value => {
@@ -23,9 +16,15 @@ const Navbar = () => {
                 <Link to='/' className="logo">
                   <p>Christina Yun</p>
                 </Link>
-                <button className="nav-btn" onClick={handleSidebar}>
-                  <MdMenu className="nav-icon" />
-                </button>
+                {sidebarOpen
+                  ? <button className="nav-btn" onClick={handleSidebar}>
+                    <MdClose className="nav-icon close" />
+                  </button>
+                  : <button className="nav-btn" onClick={handleSidebar}>
+                    <MdMenu className="nav-icon open" />
+                  </button>
+                }
+
               </div>
 
               <ul className={sidebarOpen ? 'nav-links show-nav' : 'nav-links'}>
@@ -67,6 +66,7 @@ const NavbarWrapper = styled.nav`
     cursor: pointer;
     outline: none;
   }
+  /* ********TODO: ADD TRANSITION BETWEEN TOGGLE******* */
 
   .nav-icon {
     font-size: 1.5rem;
@@ -93,7 +93,7 @@ const NavbarWrapper = styled.nav`
     text-decoration: none;
     padding: 1rem 0;
     color: black;
-    transition: all 0.3s linear;
+    transition: var(--mainTransition);
     text-align: center;
     font-weight: 600;
     letter-spacing: 0.1rem;

@@ -7,6 +7,7 @@ import Contact from './pages/Contact';
 import About from './pages/About';
 import Error from './pages/Error';
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
           <Error />
         </Route>
       </Switch>
+      <Footer />
     </BrowserRouter>
   );
 }

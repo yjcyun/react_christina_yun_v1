@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import mainBcg from '../image/mainBcg.png';
+import mainBcg from '../../image/mainBcg.png';
+// https://www.opendoodles.com/
 
 const Hero = () => {
   return (

@@ -2,6 +2,8 @@
 
 :root {
   --mainColor: #FF6161;
+  --mainTransition: all 0.2s linear;
+  --lightestColor: #fffbfb;
 }
 
 * {
@@ -21,10 +23,29 @@ body {
   border-radius: 1rem;
   width: 6rem;
   margin: 0 auto;
-  
+}
+
+a {
+  text-decoration: none;
 }
 
 .img-container img {
   width: 100%
 }
 
+.btn {
+  border: 1px solid #222;
+  padding: 1rem 4rem;
+  margin: 0 auto;
+  text-align: center;
+  display: block;
+  border-radius: 2rem;
+  outline: none;
+  cursor: pointer;
+  transition: var(--mainTransition);
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  background: #222;
+  color: white;
+}

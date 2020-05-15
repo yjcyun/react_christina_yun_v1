@@ -1,15 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const ProjectCard = ({ title, skills, img, subtitle }) => {
-  console.log(skills);
+const ProjectCard = ({ title, skills, img, subtitle, live, github }) => {
   return (
     <ProjectCardWrapper>
       <div className="card-skills">
-
         {skills.map(item => {
           return (
-            <div className="card-skill">
+            <div key={item} className="card-skill">
               <span>{item}</span>
             </div>
           )
@@ -18,19 +16,25 @@ const ProjectCard = ({ title, skills, img, subtitle }) => {
         <div className="img-container">
           <img src={img} alt="project screenshot" />
         </div>
-     
+
         <div className="card-text-container">
-          {skills.map(item => {
+          {skills.map(item => { 
+          
             return (
-              <div className="card-skill large">
+              <div 
+              key={item} 
+              className="card-skill large">
                 <span>{item}</span>
               </div>
             )
           })}
           <h1 className="card-title">{title}</h1>
           <p className="card-subtitle">{subtitle}</p>
+          <a href={live} className="link-icon"><button className="btn">Live Demo</button></a>
+          <a href={github} className="link-icon">
+            <button className="btn">Github</button>
+          </a>
         </div>
-
       </div>
     </ProjectCardWrapper>
   )
@@ -41,17 +45,16 @@ margin: 2rem auto;
 width: 90%;
 padding: 2rem;
 border: 1px solid #ffe1e1;
-background:#fffbfb;
+background: var(--lightestColor);
 border-radius: 10px;
 text-align: center;
-cursor: pointer;
+position: relative;
 
 .card-skill.large {
   display: none
 }
 
 .img-container {
-  width: 22rem;
   margin: 2rem auto;
 }
 
@@ -70,6 +73,14 @@ cursor: pointer;
   text-transform: uppercase;
   margin-bottom: 1rem;
   font-size:2rem;
+}
+
+
+.btn {
+  padding: 0.5rem 1rem;
+  display: inline;
+  margin: 1.5rem 0.5rem 0 0.5rem;
+  border-radius: 0;
 }
 
   @media (min-width: 768px) {
@@ -96,18 +107,16 @@ cursor: pointer;
     }
     .card-skill.large {
       display: inline-block;
-      margin-bottom: 5rem;
+      margin-bottom: 3rem;
     }
     .card-subtitle {
       width: 25rem;
       margin: 0 auto;
     }
-   
     .card-title{
       font-size: 2.8rem;
     }
   }
-
 `;
 
 export default ProjectCard
