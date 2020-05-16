@@ -6,11 +6,13 @@ import Contact from './pages/Contact';
 import Error from './pages/Error';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import ScrollToTop from './components/ScrollToTop';
 
 function App() {
   return (
     <BrowserRouter>
-    <Navbar />
+      <ScrollToTop />
+      <Navbar />
       <Switch>
         <Route exact path='/'>
           <Home />
@@ -18,11 +20,11 @@ function App() {
         <Route exact path='/projects'>
           <Projects />
         </Route>
-     
+
         <Route path='/contact'>
           <Contact />
         </Route>
-     
+
         <Route path='*'>
           <Error />
         </Route>

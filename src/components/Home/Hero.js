@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 
-
 const Hero = ({ title, title2, title3, title4, img, children }) => {
   return (
     <HeroWrapper>
@@ -9,12 +8,15 @@ const Hero = ({ title, title2, title3, title4, img, children }) => {
         <img src={img} alt="avatar" />
       </div>
       <div className="hero-text">
-        <h1>{title}<br />{title2}</h1>
-        <hr className="title-hr" />
-        <h1>{title3}<br />{title4}</h1>
+        <div className="hero-text-1 fadeInAnimated">
+          <h1>{title}<br />{title2}</h1>
+        </div>
+        <div className="hero-text-2 fadeInAnimated">
+          <hr className="title-hr" />
+          <h1>{title3}<br />{title4}</h1>
+        </div>
         {children}
       </div>
-
     </HeroWrapper>
   )
 }
@@ -28,6 +30,24 @@ margin-top: 3rem;
   margin: 3rem auto;
 }
 
+.fadeInAnimated {
+  opacity: 0;
+  animation: fadein 1s forwards;
+}
+
+.hero-text-1{
+  animation-delay:1s;
+}
+
+.hero-text-2{
+  animation-delay:2s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
 hr {
   margin: 1rem auto;
 }
@@ -35,6 +55,7 @@ hr {
 .hero-text h1 {
   font-size: 1.8rem;
 }
+
 .img-container{
   margin-left: 2rem;
 }
@@ -45,17 +66,21 @@ hr {
   display:flex;
   justify-content:center;
   align-items: center;
+
   .img-container{
     flex: 1;
   }
+
   .hero-text {
     flex:1;
     padding-left: 5rem;
   }
+
   .hero-text h1{
     font-size: 2.5rem;
     text-align: left;
   }
+
   hr{
     margin: 2rem 0;
   }

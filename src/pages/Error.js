@@ -1,8 +1,6 @@
 import React from 'react';
 import ErrorImg from '../image/error.png';
-import styled from 'styled-components';
 import Hero from '../components/Home/Hero';
-
 
 const Error = () => {
   return (
@@ -15,6 +13,5 @@ const Error = () => {
       </Hero>
   )
 }
-
 
 export default Error

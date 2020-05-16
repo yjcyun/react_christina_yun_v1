@@ -75,7 +75,7 @@ const ContactWrapper = styled.section`
     outline: none;
     font-size: 1rem;
     ::placeholder {
-      font-family:'Open Sans'
+      font-family: 'Poppins', sans-serif;
     }
   } 
 `;
