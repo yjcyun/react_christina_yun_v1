@@ -16,7 +16,6 @@ class WebProvider extends Component {
     this.setProjects(projectData);
   };
 
-
   // control sidebar (nav)
   handleSidebar = () => {
     this.setState({ sidebarOpen: !this.state.sidebarOpen })
@@ -31,8 +30,6 @@ class WebProvider extends Component {
       recentProjects
     });
   };
-
- 
 
   render() {
     return (

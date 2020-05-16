@@ -28,11 +28,8 @@ const Recent = () => {
 }
 
 const RecentWrapper = styled.section`
-margin: 5rem auto;
-
-.btn:hover{
-  background: black;
-}
+/* margin: 5rem auto; */
+padding: 10rem 0;
 `;
 
 export default Recent

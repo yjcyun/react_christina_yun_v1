@@ -44,7 +44,7 @@ const ProjectCardWrapper = styled.div`
 margin: 3rem auto;
 width: 90%;
 padding: 2rem;
-border: 1px solid #ffe1e1;
+border: 1px solid #ffaeae;
 background: var(--lightestColor);
 border-radius: 10px;
 text-align: center;
@@ -63,6 +63,7 @@ transition: var(--mainTransition);
 .card-skill {
   display:inline-block;
 }
+
 .card-skill span{
   border: 1px solid grey;
   border-radius: 1rem;

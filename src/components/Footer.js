@@ -5,7 +5,6 @@ import { FaLinkedinIn, FaRegEnvelope, FaGithub } from 'react-icons/fa';
 const Footer = () => {
   return (
     <>
-
       <FooterWrapper>
         <div className="wave-container">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fillOpacity="1" d="M0,64L48,58.7C96,53,192,43,288,74.7C384,107,480,181,576,176C672,171,768,85,864,74.7C960,64,1056,128,1152,133.3C1248,139,1344,85,1392,58.7L1440,32L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
@@ -52,7 +51,6 @@ const FooterWrapper = styled.footer`
   .footer-icon:hover {
     transform: translateY(-1rem);
   }
-
 
   @media (min-width: 768px) {
     .footer-text{
