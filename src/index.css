@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Sacramento&family=Poppins&display=swap');
 
 :root {
   --mainColor: #FF6161;
@@ -13,7 +13,7 @@
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+ font-family: 'Poppins', sans-serif;
   padding-top: 79px;
 }
 
@@ -52,4 +52,10 @@ a {
 
 .btn:hover {
   background: black;
+}
+
+@media screen and (min-width: 768px){
+.btn.left-btn {
+  margin: 0;
+}
 }

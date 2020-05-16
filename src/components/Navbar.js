@@ -96,7 +96,6 @@ const NavbarWrapper = styled.nav`
     transition: var(--mainTransition);
     text-align: center;
     font-weight: 600;
-    letter-spacing: 0.1rem;
     font-size: 2rem;
   }
 

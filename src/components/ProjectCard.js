@@ -73,9 +73,10 @@ transition: var(--mainTransition);
 }
 
 .card-title{
-  text-transform: uppercase;
+  text-transform: capitalize;
   margin-bottom: 1rem;
   font-size:2rem;
+  font-family: 'Playfair Display', serif;
 }
 
 
@@ -90,7 +91,7 @@ transition: var(--mainTransition);
     padding: 0;
     width: 80%;
     &:hover {
-      transform: scale(1.03);
+      transform: scale(1.05);
       background: #fff;
     }
     .img-container{

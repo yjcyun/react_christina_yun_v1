@@ -1,15 +1,20 @@
 import React from 'react';
 import ErrorImg from '../image/error.png';
+import styled from 'styled-components';
+import Hero from '../components/Home/Hero';
+
 
 const Error = () => {
   return (
-    <>
-
-      <div className="img-container">
-        <img src={ErrorImg} alt="404" />
-      </div>
-    </>
+    <Hero
+      img={ErrorImg}
+      title="404"
+      title3="Oops!" 
+      title4="This page does not exist">
+      <button className="btn left-btn" style={{marginTop:'3rem'}}>return home</button>
+      </Hero>
   )
 }
+
 
 export default Error

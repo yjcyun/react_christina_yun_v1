@@ -28,8 +28,7 @@ const Recent = () => {
 }
 
 const RecentWrapper = styled.section`
-/* margin: 5rem auto; */
-padding: 10rem 0;
+padding: 1rem 0;
 `;
 
 export default Recent

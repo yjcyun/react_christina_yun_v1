@@ -1,19 +1,20 @@
 import React from 'react';
 import styled from 'styled-components';
-import mainBcg from '../../image/mainBcg.png';
-// https://www.opendoodles.com/
 
-const Hero = () => {
+
+const Hero = ({ title, title2, title3, title4, img, children }) => {
   return (
     <HeroWrapper>
       <div className="img-container">
-        <img src={mainBcg} alt="avatar" />
+        <img src={img} alt="avatar" />
       </div>
       <div className="hero-text">
-        <h1>Hi there,<br /> my name is Christina.</h1>
+        <h1>{title}<br />{title2}</h1>
         <hr className="title-hr" />
-        <h1>A React developer<br /> in Toronto, ON</h1>
+        <h1>{title3}<br />{title4}</h1>
+        {children}
       </div>
+
     </HeroWrapper>
   )
 }
@@ -34,6 +35,9 @@ hr {
 .hero-text h1 {
   font-size: 1.8rem;
 }
+.img-container{
+  margin-left: 2rem;
+}
 
 @media (min-width: 768px) {
   max-width: 1170px;
@@ -42,7 +46,7 @@ hr {
   justify-content:center;
   align-items: center;
   .img-container{
-    flex: 1
+    flex: 1;
   }
   .hero-text {
     flex:1;
