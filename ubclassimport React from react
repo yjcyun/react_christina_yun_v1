@@ -1,0 +1,59 @@
+[33mcommit fbca499d1b7182a64c3ee440814dbe75fef0d148[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Author: Yujeong Christina Yun <yjc.yun@gmail.com>
+Date:   Sat May 16 19:39:09 2020 -0400
+
+    scroll to top
+
+[33mcommit c2e93d5211d93c38b303be72547b4efe5e0e374b[m
+Author: Yujeong Christina Yun <yjc.yun@gmail.com>
+Date:   Sat May 16 17:12:15 2020 -0400
+
+    font family and error page
+
+[33mcommit f366649b8a4e6cffb942397b1a765c572c2daa0c[m
+Author: Yujeong Christina Yun <yjc.yun@gmail.com>
+Date:   Sat May 16 15:48:09 2020 -0400
+
+    contact page
+
+[33mcommit f1f9af9b2e83a76cf7dc83580a706f240639287d[m
+Author: Yujeong Christina Yun <yjc.yun@gmail.com>
+Date:   Fri May 15 18:14:05 2020 -0400
+
+    about page and project card transition
+
+[33mcommit 7bbc4ad5d80272bb480a278116ab02db65a3cbfd[m
+Author: Yujeong Christina Yun <yjc.yun@gmail.com>
+Date:   Fri May 15 16:56:20 2020 -0400
+
+    footer and links to projects
+
+[33mcommit a042881b4b673a65c9746ff8785eb67fbbce803d[m
+Author: Yujeong Christina Yun <yjc.yun@gmail.com>
+Date:   Fri May 15 13:06:35 2020 -0400
+
+    context for navbar
+
+[33mcommit dd39a7c930712867bd9ba7182c2a445cbba1f275[m
+Author: Yujeong Christina Yun <yjc.yun@gmail.com>
+Date:   Fri May 15 12:57:44 2020 -0400
+
+    project card complete
+
+[33mcommit 04b4673e6e5553889b0f77decbd5c5e95c33a167[m
+Author: Yujeong Christina Yun <yjc.yun@gmail.com>
+Date:   Thu May 14 23:06:24 2020 -0400
+
+    project card
+
+[33mcommit c1bfae344d3a2825f7ca1659c99ebb03b812e240[m
+Author: Yujeong Christina Yun <yjc.yun@gmail.com>
+Date:   Thu May 14 21:33:16 2020 -0400
+
+    navbar and hero
+
+[33mcommit a7d477a3bc48d905ed66a423f598e271d3047af5[m
+Author: Yujeong Christina Yun <yjc.yun@gmail.com>
+Date:   Thu May 14 17:51:02 2020 -0400
+
+    Initialize project using Create React App
