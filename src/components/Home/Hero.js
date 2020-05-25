@@ -32,15 +32,15 @@ margin-top: 3rem;
 
 .fadeInAnimated {
   opacity: 0;
-  animation: fadein 1s forwards;
+  animation: fadein 0.4s forwards;
 }
 
 .hero-text-1{
-  animation-delay:1s;
+  animation-delay:0.4s;
 }
 
 .hero-text-2{
-  animation-delay:2s;
+  animation-delay:1.3s;
 }
 
 @keyframes fadein {
