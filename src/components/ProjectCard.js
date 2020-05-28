@@ -18,19 +18,20 @@ const ProjectCard = ({ title, skills, img, subtitle, live, github }) => {
         </div>
 
         <div className="card-text-container">
-          {skills.map(item => { 
-          
+          {skills.map(item => {
             return (
-              <div 
-              key={item} 
-              className="card-skill large">
+              <div
+                key={item}
+                className="card-skill large">
                 <span>{item}</span>
               </div>
             )
           })}
           <h1 className="card-title">{title}</h1>
           <p className="card-subtitle">{subtitle}</p>
-          <a href={live} className="link-icon"><button className="btn">Live Demo</button></a>
+          <a href={live} className="link-icon">
+            <button className="btn">Live Demo</button>
+          </a>
           <a href={github} className="link-icon">
             <button className="btn">Github</button>
           </a>
@@ -50,7 +51,6 @@ border-radius: 10px;
 text-align: center;
 position: relative;
 transition: var(--mainTransition);
-
 
 .card-skill.large {
   display: none
@@ -87,6 +87,14 @@ transition: var(--mainTransition);
   border-radius: 0;
 }
 
+  @media (max-width: 380px) {
+    .btn {
+      padding: 0.5rem 0.7rem;
+      margin: 1.5rem 0.4rem 0 0;
+      font-size: 0.9rem;
+    }
+  }
+
   @media (min-width: 996px) {
     padding: 0;
     width: 80%;
@@ -98,10 +106,11 @@ transition: var(--mainTransition);
       flex: 2;
     }
     .img-container img{
-      width: 70%;
+      width: 80%;
     }
     .card-text-container{
       flex:3;
+      padding: 2rem;
     }
     .card-skills {
       display: flex;
