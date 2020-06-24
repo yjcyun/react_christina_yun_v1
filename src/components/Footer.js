@@ -32,8 +32,11 @@ const FooterWrapper = styled.footer`
   .wave-container {
     position:relative;
     overflow:hidden;
-    background: rgb(255,255,255);
-    background: linear-gradient(rgba(255,255,255,1) 0%, rgba(255,225,225,1) 100%);
+    /* background: rgb(255,255,255); */
+    /* background: linear-gradient(rgba(255,255,255,1) 0%, rgba(255,225,225,1) 100%); */
+    background-color: var(--mainColor);
+background-image: linear-gradient(#fff 0%,#cfdfef 100%);
+
     text-align:center;
   }
 

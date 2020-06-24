@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Sacramento&family=Poppins&display=swap');
 
 :root {
-  --mainColor: #FF6161;
+  --mainColor: #7fbbca;
   --mainTransition: all 0.2s linear;
   --lightestColor: #fffbfb;
+  --faintBlue: #fcfdfe;
 }
 
 * {
@@ -13,7 +14,7 @@
 }
 
 body {
- font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins', sans-serif;
   padding-top: 79px;
 }
 
@@ -30,7 +31,7 @@ a {
 }
 
 .img-container img {
-  width: 100%
+  width: 100%;
 }
 
 .btn {
@@ -54,8 +55,8 @@ a {
   background: black;
 }
 
-@media screen and (min-width: 768px){
-.btn.left-btn {
-  margin: 0;
-}
+@media screen and (min-width: 768px) {
+  .btn.left-btn {
+    margin: 0;
+  }
 }

@@ -1,35 +1,17 @@
 import React from 'react';
 import styled from 'styled-components';
 import { FaLinkedinIn, FaRegEnvelope, FaGithub } from 'react-icons/fa';
+import Title from '../components/Title';
 
 const Contact = () => {
 
   return (
     <ContactWrapper>
+      <Title title="about" />
       <div className="contact-text">
-        <h1>Find me on social media or send me a message!</h1>
-        <div className="social-icons">
-          <a href="https://www.linkedin.com/in/christina-yun-58954a123/">
-            <FaLinkedinIn className="footer-icon" />
-          </a>
-          <a href="mailto:yjc.yun@gmail.com">
-            <FaRegEnvelope className="footer-icon" />
-          </a>
-          <a href="https://github.com/yjcyun">
-            <FaGithub className="footer-icon" />
-          </a>
-        </div>
+        <p>I am an ex-Registered Veterinary Technician who decided to become a web developer. I enjoy learning new technologies and am always fascinated by how much I do not know about this world. Should you want to learn more about me, do not hestitate to send me a message.</p>
       </div>
-      <div className="contact">
-        <form
-          action="https://formspree.io/christina5707@gmail.com"
-          method="POST">
-          <input type="text" name="name" placeholder="Name" required />
-          <input type="email" name="email" placeholder="Email" required />
-          <textarea cols="30" rows="15" placeholder="Message" required />
-          <button className="btn" type="submit" style={{ marginTop: '2rem' }}>send</button>
-        </form>
-      </div>
+    
     </ContactWrapper>
   )
 }
@@ -37,46 +19,15 @@ const Contact = () => {
 const ContactWrapper = styled.section`
  .contact-text {
     width: 80%;
-    max-width: 30rem;
+    max-width: 40rem;
     text-align: center;
-    margin: 3rem auto;
-    padding-top: 3rem;
+    margin: 2rem auto;
   }
 
-  .contact-text h1{
+  .contact-text p{
     line-height:1.5;
-    margin-bottom: 2rem;
-    font-size: 2rem;
+    margin-bottom: 5rem;
+    font-size: 1.4rem;
   }
-
-  .footer-icon{
-    font-size: 2.3rem;
-    color: black;
-    margin: 1rem 2rem;
-    transition: var(--mainTransition);
-  }
-
-  .footer-icon:hover {
-    transform: translateY(-1rem);
-  }
-
-  .contact {
-    max-width: 35rem;
-    width: 80%;
-    text-align: center;
-    margin: 1rem auto;
-  }
-
-  input, textarea {
-    display: block;
-    width: 100%;
-    padding: 0.8rem;
-    margin: 0.7rem 0;
-    outline: none;
-    font-size: 1rem;
-    ::placeholder {
-      font-family: 'Poppins', sans-serif;
-    }
-  } 
 `;
 export default Contact
