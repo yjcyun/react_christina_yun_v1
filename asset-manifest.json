@@ -1,29 +1,29 @@
 {
   "files": {
-    "main.css": "/static/css/main.054e6d9b.chunk.css",
-    "main.js": "/static/js/main.5a07927d.chunk.js",
-    "main.js.map": "/static/js/main.5a07927d.chunk.js.map",
+    "main.css": "/static/css/main.193f23dd.chunk.css",
+    "main.js": "/static/js/main.45ee357c.chunk.js",
+    "main.js.map": "/static/js/main.45ee357c.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.75293954.js",
     "runtime-main.js.map": "/static/js/runtime-main.75293954.js.map",
-    "static/js/2.4cd6cce8.chunk.js": "/static/js/2.4cd6cce8.chunk.js",
-    "static/js/2.4cd6cce8.chunk.js.map": "/static/js/2.4cd6cce8.chunk.js.map",
+    "static/js/2.059d3630.chunk.js": "/static/js/2.059d3630.chunk.js",
+    "static/js/2.059d3630.chunk.js.map": "/static/js/2.059d3630.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.cee88e4e6fd80c9232bc235dd123a736.js": "/precache-manifest.cee88e4e6fd80c9232bc235dd123a736.js",
+    "precache-manifest.cb6bf45af1407ab383c952f99af2ce69.js": "/precache-manifest.cb6bf45af1407ab383c952f99af2ce69.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.054e6d9b.chunk.css.map": "/static/css/main.054e6d9b.chunk.css.map",
-    "static/js/2.4cd6cce8.chunk.js.LICENSE.txt": "/static/js/2.4cd6cce8.chunk.js.LICENSE.txt",
+    "static/css/main.193f23dd.chunk.css.map": "/static/css/main.193f23dd.chunk.css.map",
+    "static/js/2.059d3630.chunk.js.LICENSE.txt": "/static/js/2.059d3630.chunk.js.LICENSE.txt",
     "static/media/adopt-1.png": "/static/media/adopt-1.df6f4e49.png",
     "static/media/dognews.png": "/static/media/dognews.bbcbef33.png",
     "static/media/error.png": "/static/media/error.e971d617.png",
     "static/media/fabric-1.png": "/static/media/fabric-1.05b95c22.png",
-    "static/media/mainBcg.png": "/static/media/mainBcg.1943024b.png",
+    "static/media/mainBcg-blue.png": "/static/media/mainBcg-blue.46ef55e3.png",
     "static/media/personalwebsite.png": "/static/media/personalwebsite.e0ecd5c7.png",
     "static/media/plant-1.png": "/static/media/plant-1.3cb1c60d.png"
   },
   "entrypoints": [
     "static/js/runtime-main.75293954.js",
-    "static/js/2.4cd6cce8.chunk.js",
-    "static/css/main.054e6d9b.chunk.css",
-    "static/js/main.5a07927d.chunk.js"
+    "static/js/2.059d3630.chunk.js",
+    "static/css/main.193f23dd.chunk.css",
+    "static/js/main.45ee357c.chunk.js"
   ]
 }
