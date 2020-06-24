@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import { FaLinkedinIn, FaRegEnvelope, FaGithub } from 'react-icons/fa';
 import Title from '../components/Title';
 
 const Contact = () => {
