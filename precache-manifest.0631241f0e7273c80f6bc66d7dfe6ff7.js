@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "bae7d23e9b20bcee2dc2242323a1bd4d",
+    "revision": "d3e71bb2ed3779074bf0a3ee814b2fa4",
     "url": "/index.html"
   },
   {
-    "revision": "423393e1c346fa359983",
+    "revision": "497189fcc9644ad202f6",
     "url": "/static/css/main.193f23dd.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/2.059d3630.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "423393e1c346fa359983",
-    "url": "/static/js/main.c91933a6.chunk.js"
+    "revision": "497189fcc9644ad202f6",
+    "url": "/static/js/main.92dbef84.chunk.js"
   },
   {
     "revision": "7dc45054942f0ee89185",
@@ -28,16 +28,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/adopt-1.df6f4e49.png"
   },
   {
-    "revision": "bbcbef337256e1d0efc6f1c3a6bc44d0",
-    "url": "/static/media/dognews.bbcbef33.png"
-  },
-  {
     "revision": "e971d617b1fa82f2bb55f72ea92d0959",
     "url": "/static/media/error.e971d617.png"
   },
   {
     "revision": "05b95c22be74df4b712dca2d6d1185b6",
     "url": "/static/media/fabric-1.05b95c22.png"
+  },
+  {
+    "revision": "65947652bdadbe279180eda494699c54",
+    "url": "/static/media/heather.65947652.png"
   },
   {
     "revision": "46ef55e3cbb48eef0f00e6b8443ecb80",
