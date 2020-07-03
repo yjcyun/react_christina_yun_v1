@@ -1,19 +1,19 @@
 import fabricImg from '../image/fabric-1.png';
 import adoptImg from '../image/adopt-1.png';
 import plantImg from '../image/plant-1.png';
-import dogNewsImg from '../image/dognews.png';
+import heatherImg from '../image/heather.png';
 import personalWebImg from '../image/personalwebsite.png';
 
 export const projectData = [
   {
     id: 3,
-    title: "Dog News",
+    title: "Heather Dick",
     subtitle: "A full-stack forum inspired by Hacker News",
-    skills: ["React", "Semantic UI", "Firebase"],
-    img: dogNewsImg,
+    skills: ["React", "Gatsby", "Strapi"],
+    img: heatherImg,
     recent: true,
-    github: "https://github.com/yjcyun/react_dogs_news",
-    live: "https://dog-news-b10d7.web.app"
+    github: "https://github.com/yjcyun/heather_dick_portfolio",
+    live: "https://heatherdick.netlify.app/"
   },
   {
     id: 4,
