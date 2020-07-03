@@ -5,16 +5,16 @@ import heatherImg from '../image/heather.png';
 import personalWebImg from '../image/personalwebsite.png';
 
 export const projectData = [
-  {
-    id: 3,
-    title: "Heather Dick",
-    subtitle: "",
-    skills: ["React", "Gatsby", "Strapi"],
-    img: heatherImg,
-    recent: true,
-    github: "https://github.com/yjcyun/heather_dick_portfolio",
-    live: "https://heatherdick.netlify.app/"
-  },
+  // {
+  //   id: 3,
+  //   title: "Heather Dick",
+  //   subtitle: "A personal website ",
+  //   skills: ["React", "Gatsby", "Strapi"],
+  //   img: heatherImg,
+  //   recent: true,
+  //   github: "https://github.com/yjcyun/heather_dick_portfolio",
+  //   live: "https://heatherdick.netlify.app/"
+  // },
   {
     id: 4,
     title: "Personal Website",
@@ -42,7 +42,7 @@ export const projectData = [
     subtitle: "A dog adoption site with a list of adoptable dogs and information on each dog.",
     skills: ["React", "Context API", "CSS"],
     img: adoptImg,
-    recent: false,
+    recent: true,
     github: "https://github.com/yjcyun/react_adopt_dog",
     live: "https://react-adopt-dog.netlify.app/"
   },
