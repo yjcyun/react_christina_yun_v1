@@ -8,7 +8,7 @@ export const projectData = [
   {
     id: 3,
     title: "Heather Dick",
-    subtitle: "A full-stack forum inspired by Hacker News",
+    subtitle: "",
     skills: ["React", "Gatsby", "Strapi"],
     img: heatherImg,
     recent: true,
