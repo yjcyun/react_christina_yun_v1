@@ -42,8 +42,8 @@ const ProjectCard = ({ title, skills, img, subtitle, live, github }) => {
 }
 
 const ProjectCardWrapper = styled.div`
-margin: 3rem auto;
-width: 90%;
+margin: 2rem 1rem;
+max-width: 1170px;
 padding: 2rem;
 border: 1px solid #ffaeae;
 background: var(--lightestColor);
@@ -79,7 +79,6 @@ transition: var(--mainTransition);
   font-family: 'Playfair Display', serif;
 }
 
-
 .btn {
   padding: 0.5rem 1rem;
   display: inline;
@@ -97,7 +96,7 @@ transition: var(--mainTransition);
 
   @media (min-width: 996px) {
     padding: 0;
-    width: 80%;
+  
     &:hover {
       transform: scale(1.05);
       background: #fff;
@@ -112,6 +111,7 @@ transition: var(--mainTransition);
       flex:3;
       padding: 2rem;
     }
+
     .card-skills {
       display: flex;
       flex-direction: row;
@@ -119,20 +119,28 @@ transition: var(--mainTransition);
       align-items: center;
       position: relative;
     }
+
     .card-skill {
       display: none;
     }
+
     .card-skill.large {
       display: inline-block;
       margin-bottom: 3rem;
     }
+
     .card-subtitle {
       width: 25rem;
       margin: 0 auto;
     }
+
     .card-title{
       font-size: 2.8rem;
     }
+  }
+
+  @media (min-width: 1100px) {
+    margin: 3rem auto;
   }
 `;
 

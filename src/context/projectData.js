@@ -5,16 +5,16 @@ import heatherImg from '../image/heather.png';
 import personalWebImg from '../image/personalwebsite.png';
 
 export const projectData = [
-  // {
-  //   id: 3,
-  //   title: "Heather Dick",
-  //   subtitle: "A personal website ",
-  //   skills: ["React", "Gatsby", "Strapi"],
-  //   img: heatherImg,
-  //   recent: true,
-  //   github: "https://github.com/yjcyun/heather_dick_portfolio",
-  //   live: "https://heatherdick.netlify.app/"
-  // },
+  {
+    id: 3,
+    title: "Heather Dick's Portfolio Website",
+    subtitle: "A personal portfolio website with blog",
+    skills: ["React", "Gatsby", "Strapi"],
+    img: heatherImg,
+    recent: false,
+    github: "https://github.com/yjcyun/heather_dick_portfolio",
+    live: "https://heatherdick.netlify.app/"
+  },
   {
     id: 4,
     title: "Personal Website",
